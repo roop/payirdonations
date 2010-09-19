@@ -27,10 +27,13 @@ function validateForm() {
                             "amount",
                             "bankname");
     var allGood = true;
+    var firstErraneousField = "";
     for (var i = 0; i < fieldsToCheck.length; i++) {
         var id = fieldsToCheck[i];
         var elem = document.getElementById(id);
         if (elem && !isValueCorrectInInputBox(elem)) {
+            if (firstErraneousField == "")
+                firstErraneousField = elem;
             addWordToClassName(elem, "erraneous");
             allGood = false;
             $("#" + id).bind('blur', function() {
@@ -44,6 +47,8 @@ function validateForm() {
             removeWordFromClassName(elem, "erraneous");
         }
     }
+    if (firstErraneousField != "")
+        firstErraneousField.focus();
     return allGood;
 }
 
