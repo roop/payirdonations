@@ -9,25 +9,26 @@
 <script type="text/javascript" src="donate.js"></script>
 </head>
 
-<center><body>
-<!--- Main block Starts --->
+<body>
+<center>
+<!--- Main block Starts -->
 <table width="800" cellpadding="0" cellspacing="0" border="0" bgcolor="ffffff">
 <tr>
 <td>
 
-<!--- Top shade Starts for 100% --->
+<!--- Top shade Starts for 100% -->
 <tr><td width="30" style="background: url('images/left_corner1.gif') no-repeat top"><img src="images/Leftcorner_1.gif" width="30" height="27" alt border="0"></td>
 <td width="100%" style="background: url('images/top_shade.gif') repeat-y top"><img src="images/top_shade.gif" width="100%" height="27" alt border="0"></td>
 <td width="30" style="background: url('images/rightcorner_1.gif') no-repeat top"><img src="images/rightcorner_1.gif" width="30" height="27" alt border="0"></td>
 </tr>
-<!--- Top shade ends for 100% --->
+<!--- Top shade ends for 100% -->
 
-<tr> <!-- Central content area TR 3 starts  --->
-<!--- Left shade starts --->
+<tr> <!-- Central content area TR 3 starts  -->
+<!--- Left shade starts -->
 <td align="left" height="100%" style="background: url('images/Left_shade.gif') repeat-y top"><img src="images/Left_shade.gif" width="30" height="1" alt border="0"></td>
 
-<td> <!-- central TD Starts  --->
-<!--- Mid content for Logo/banner starts--->
+<td> <!-- central TD Starts  -->
+<!--- Mid content for Logo/banner starts-->
 <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="bottom">
 <td valign="bottom" colspan="0" align="left"><a href="/">
@@ -41,11 +42,11 @@
 </td> 
 </tr> 
 </table>
-<!--- Mid content for Logo/banner ends--->
+<!--- Mid content for Logo/banner ends-->
 
- <!-- Central content area TABLE 2 Starts  --->
+ <!-- Central content area TABLE 2 Starts  -->
 <table align="center" width="750" cellpadding="0" cellspacing="0" border="0">
-<tr align="right">  <!-- TR 5 starts  --->
+<tr align="right">  <!-- TR 5 starts  -->
 <td bgcolor="#666666" valign="top"><div style="background:#ffffff"><img src="images/Spacer.gif" width="1" height="4" alt></div>
 <img src="images/Spacer.gif" width="1" height="27" alt><br>
 <div style="background:#ffffff"><img src="images/Spacer.gif" width="1" height="9" alt></div>
@@ -76,10 +77,10 @@
 <div style="background:#ffffff"><img src="images/Spacer.gif" width="1" height="9" alt></div>
 </td>
 
-</tr> <!-- TR 5 ends-  --->
-</table>  <!-- Central content area TABLE 2 ends  --->
+</tr> <!-- TR 5 ends-  -->
+</table>  <!-- Central content area TABLE 2 ends  -->
 
-<!--- Payir content starts --->
+<!--- Payir content starts -->
 <table width="700" cellpadding="0" cellspacing="0" border="0">
 <tr><td colspan="3">&nbsp;</td></tr>
 <tr>
@@ -248,7 +249,7 @@ How would you like to donate?<br/>
                     you to claim your tax benefits under Section 80G of the Indian Income Tax
                     Act. In case you'd like to receive the certificate on another address, please
                     let us know at <a href="mailto:donate@payir.org" style="color: inherit;"
-                    tabindex=-1 >donations@payir.org</a>.
+                    tabindex=0 >donations@payir.org</a>.
                     </label>
                 </div>
             </li><li>
@@ -263,7 +264,7 @@ How would you like to donate?<br/>
                     <label class="guidelines" for="nationality">
                     We maintain contributions from Indian and non-Indian donors in separate
                     bank accounts as per <a href="http://www.fcraforngos.org/"
-                    style="color: inherit;" tabindex=-1 >FCRA</a> regulations. So the account
+                    style="color: inherit;" tabindex=0 >FCRA</a> regulations. So the account
                     in which we'd like to receive your donation depends on your nationality.
                     </label>
                 </div> 
@@ -327,6 +328,7 @@ How would you like to donate?<br/>
     </div> <!-- cheque_dd_stack -->
 
 </div> <!-- div class="section" -->
+</div> <!-- TopText -->
 </td>
 </tr>
 <tr>
@@ -336,28 +338,26 @@ How would you like to donate?<br/>
 <td align="justify">
 &nbsp;</td>
 </tr></table>
-<!--- Payir content ends --->
+<!--- Payir content ends -->
 
-</td><!-- central TD ends  --->
+</td><!-- central TD ends  -->
 
 
 
-<!--- Right shade starts for 100% --->
+<!--- Right shade starts for 100% -->
 <td height="100%" style="background: url('images/right_shade.gif') repeat-y top"><img src="images/right_shade.gif" width="30" height="1" alt border="0"></td>
-</tr> <!-- Central content area TR 3 ends  --->
+</tr> <!-- Central content area TR 3 ends  -->
 
-<!--- Bottom shade starts for 100% --->
+<!--- Bottom shade starts for 100% -->
 <tr>
 <td align="left" width="30" style="background: url('images/left_corner2.gif') no-repeat top"><img src="images/Leftcorner_2.gif" width="30" height="27" alt border="0"></td>
 <td align="center" width="100%" style="background: url('images/bottom_shade.gif') repeat-y top"><img src="images/bottom_shade.gif" width="100%" height="27" alt border="0"></td>
 <td align="right" width="30" style="background: url('images/rightcorner_2.gif') no-repeat top"><img src="images/rightcorner_2.gif" width="30" height="27" alt border="0"></td>
 </tr>
-<!--- Bottom shade ends for 100% --->
+<!--- Bottom shade ends for 100% -->
 
 
-</td>
-</tr>
-</table> <!--- Main block ends --->
-</body>
+</table> <!--- Main block ends -->
 </center>
+</body>
 </html>
