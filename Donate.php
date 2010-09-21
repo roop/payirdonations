@@ -114,7 +114,7 @@
 <td align="justify">
 <div id="TopText">
 <br>
-<h3>Support Payir: Donate now</h3>
+<h4>Support Payir: Donate now</h4>
 <br/>
 Payir is a non-profit charitable trust and runs a majority of its operations
 on donations from well wishers. Apart from specific projects sponsored by our
