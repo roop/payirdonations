@@ -355,6 +355,66 @@ blockquote
     margin: 15px 0;
 }
 
+blockquote table
+{
+    font-family: inherit;
+    font-size: inherit;
+    border-spacing: 2px;
+    width: 100%;
+}
+
+blockquote h3
+{
+    color: #444;
+    background: #ccc;
+    margin: 0;
+}
+
+blockquote table td,th
+{
+    padding: 5px;
+    vertical-align: top;
+}
+
+blockquote table th
+{
+    text-align: right;
+    width: 30%;
+}
+
+blockquote table td
+{
+    text-align: left;
+}
+
+blockquote table span
+{
+    font-size: 0.9em;
+    color: #707070;
+    margin: 0 5px;
+}
+
+blockquote.lightweight
+{
+    background: transparent;
+    border: 1px #ccc dotted
+    padding: 10px;
+    margin: 15px 0;
+}
+
+textarea#bank_transfer_additional_info
+{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+p.indent
+{
+    margin-left: 30px;
+    color: #444;
+}
+
 /* guidelines or additional info for the fields */
 
 form .guidelines
@@ -442,3 +502,4 @@ input.button_text
     font-weight:normal;
     margin:0pt 0pt 3px;
 }
+

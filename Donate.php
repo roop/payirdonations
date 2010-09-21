@@ -154,9 +154,14 @@ How would you like to donate?<br/>
 </div>
 
     <div id="bank_transfer_stack" class="payment_mode_stack" style="display: block;">
-        <form id="bank_transfer_form" method="post" action="bank_transfer.php">
+        <form id="bank_transfer_form" method="post" action="BankTransferInfo.php">
             <div class="stack_description">
                 <h3>By bank transfer</h3>
+                <p>
+                Using the netbanking facility of your bank, you
+                can transfer your donation to us through your bank's website.
+                </p>
+                <br/>
                 <p>
                 Please fill out information below about yourself and
                 the bank transfer you intend to make. This will help
