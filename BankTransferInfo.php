@@ -1,4 +1,10 @@
 <?php
+    if ( (!array_key_exists("payir_form_type", $_REQUEST)) || ($_REQUEST['payir_form_type'] != 'donate_bank_transfer_form')) {
+        # Page was directly accessed - not through the form in Donate.php
+        header('Location: /Donate.php'); # redirect to Donate.php
+        return;
+    }
+
     $nationalityString = "";
     switch ($_REQUEST['nationality']) {
         case 0: $nationalityString = "an Indian"; break;
@@ -9,7 +15,43 @@
 
     # FIXME: Validate the numbers here too. What if the donor had turned off
     # javascript in his browser.
+
+    # mail the details to donation-alert@payir.org
+    $subject      = "Bank transfer from {$_REQUEST['name']} for Rs. {$_REQUEST['amount']}";
+    $body         = <<<ENDOFMSG
+A potential donor submitted the following bank transfer details
+in the form at http://www.payir.org/Donate.php :
+
+Name: {$_REQUEST['name']}
+Email: {$_REQUEST['email']}
+Address:
+{$_REQUEST['address_1']}
+{$_REQUEST['address_2']}
+{$_REQUEST['address_3']}
+{$_REQUEST['address_4']}
+{$_REQUEST['address_5']}
+Nationality: $nationalityString
+Amount (Rs.): {$_REQUEST['amount']}
+Bank name: {$_REQUEST['bankname']}
+
+This email is not a confirmation of the transfer - just a heads-up
+for a possible future transfer.
+ENDOFMSG;
+#    mail("roop@knurd.in", $subject, $body, "From: no-reply@payir.org");
+    
+    $nationality = $_REQUEST['nationality'];
+    # what info should we give the donor?
+    if ($nationality == 0 || $nationality == 1) {  # Indian
+        $bankDetailsTitle = "Bank account for donations from Indian / NRI donors";
+        $bankAccountNumber = "10465350452";
+        $bankAccountType = "Savings";
+    } else if ($nationality == 2) { # foreign
+        $bankDetailsTitle = "Bank account for donations from foreign donors";
+        $bankAccountNumber = "30750793126";
+        $bankAccountType = "Current";
+    }
 ?>
+
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
@@ -132,7 +174,7 @@
        Please find our bank account information below:
     </p>
     <blockquote class="roundedrect">
-        <h3>Bank account for donations from Indian / NRI donors</h3>
+        <h3><?php echo $bankDetailsTitle ?></h3>
         <table><tbody>
         <tr><th>Bank name:</th><td>State Bank of India</td></tr>
         <tr><th>Bank branch:</th><td>Srirangam</td></tr>
@@ -140,14 +182,17 @@
                                       Tiruchy, Tamil Nadu, India, 620006</td></tr>
         <tr><th>IFSC code:</th><td>SBIN0001983<span>(for transfers within India)</span></td></tr>
         <tr><th>SWIFT code:</th><td>SBININBB246<span>(if your bank is outside India)</span></td></tr>
-        <tr><th>Account number:</th><td>10465350452</td></tr>
+        <tr><th>Account number:</th><td><?php echo $bankAccountNumber ?></td></tr>
         <tr><th>Account name:</td><td>Payir Trust</td></tr>
-        <tr><th>Account type:</th><td>Savings</td></tr>
+        <tr><th>Account type:</th><td><?php echo $bankAccountType ?></td></tr>
         </tbody></table>
     </blockquote>
     <br/>
+    <?php
+        if ($nationality == 0 || $nationality == 1) {
+            echo <<<END
     <p>
-       In case you use one of these banks, we have step-by-step instructions to help you in your transfer.
+       In case you use one of these Indian banks, we have step-by-step instructions to help you in your transfer.
     </p>
     <br/>
     <select class="select" id="bank_transfer_instructions_bank_select" name="bank_transfer_instructions_bank_select"> 
@@ -177,7 +222,9 @@
     </span>
     &nbsp;
     <br/>
-    <br/>
+END;
+    }
+    ?>
     <br/>
     Thank you for your donation. Once we receive the bank transfer,
     we will send you the following to the postal address you have specified: <br/>
