@@ -285,8 +285,8 @@ How would you like to donate?<br/>
                 </div> 
             </li><li class="buttons">
                 <div><label>* All fields are required</label></div>
-                <input type="hidden" name="payir_form_type" value="donate_bank_transfer_form" />
-                <input type="hidden" name="payir_form_id"
+                <input type="hidden" name="payir_form_name" value="bank_transfer_form" />
+                <input type="hidden" name="payir_transaction_id"
                     <?php
                         # autogenerate a unique form id
                         printf("value=\"%s\"", uniqid("PYRBTRF"));

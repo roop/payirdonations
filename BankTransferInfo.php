@@ -1,5 +1,5 @@
 <?php
-    if ( (!array_key_exists("payir_form_type", $_REQUEST)) || ($_REQUEST['payir_form_type'] != 'donate_bank_transfer_form')) {
+    if ( (!array_key_exists("payir_form_name", $_REQUEST)) || ($_REQUEST['payir_form_name'] != 'bank_transfer_form')) {
         # Page was directly accessed - not through the form in Donate.php
         header('Location: /Donate.php'); # redirect to Donate.php
         return;
@@ -226,7 +226,6 @@ END;
     }
     echo <<<END
     <input type="hidden" id="bank_transfer_info_bankname" value="{$_REQUEST['bankname']}" />
-    <input type="hidden" id="bank_transfer_info_form_id" value="{$_REQUEST['payir_form_id']}" />
 END;
     ?>
     <br/>
@@ -273,8 +272,10 @@ END;
        If you have any further information about your donation (like transaction id)
        or would like to amend the information you'd provided, you can let us
        know here:</br>
-       <form name="" action="" method="post">
-           <textarea rows="4" id="bank_transfer_additional_info"></textarea>
+       <form name="bank_transfer_additional_info_form" method="post" action="BankTransferAdditionalInfo.php">
+           <input type="hidden" name="payir_form_name" value="donate_bank_transfer_additional_info_form" />
+           <input type="hidden" id="payir_transaction_id" <?php echo "value=\"{$_REQUEST['payir_transaction_id']}\"" ?> />
+           <textarea rows="4" id="bank_transfer_additional_info" name="bank_transfer_additional_info"></textarea>
        </form>
        <input id="submitAdditionalBankTransferInfo" class="button_text" type="submit" name="submit" value="Submit additional info"/>
        </p>
