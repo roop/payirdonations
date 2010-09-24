@@ -224,6 +224,10 @@ ENDOFMSG;
     <br/>
 END;
     }
+    echo <<<END
+    <input type="hidden" id="bank_transfer_info_bankname" value="{$_REQUEST['bankname']}" />
+    <input type="hidden" id="bank_transfer_info_form_id" value="{$_REQUEST['payir_form_id']}" />
+END;
     ?>
     <br/>
     Thank you for your donation. Once we receive the bank transfer,

@@ -1,27 +1,33 @@
 // This code requires jQuery
 
+String.prototype.startsWith = function(str) { return (this.match("^"+str)==str); }
+String.prototype.endsWith = function(str) { return (this.match(str+"$")==str); }
+
 $(document).ready(function() {
-// In Donate.php
-    $(".highlightable").bind('focusin', function() {
-                addWordToClassName(this.parentNode.parentNode,"highlighted");
-                });
-    $(".highlightable").bind('blur', function() {
-                removeWordFromClassName(this.parentNode.parentNode,"highlighted")
-                });
-    $("#bank_transfer_selector").bind('change', function() {
-                $("#bank_transfer_stack").fadeIn('slow');
-                $("#cheque_dd_stack").hide();
-    });
-    $("#cheque_dd_selector").bind('change', function() {
-                $("#cheque_dd_stack").fadeIn('slow');
-                $("#bank_transfer_stack").hide();
-    });
-// In BankTransfer.php
-    $("#bank_transfer_instructions_bank_select").bind('change', function() {
-                $('.bank_transfer_instructions').hide();
-                $('#bank_transfer_instructions_bank' + $(this).val()).show();
-    });
-    $('.bank_transfer_instructions_link').popupWindow({ centerScreen: 1 });
+    if (window.location.href.endsWith("Donate.php")) {
+        $(".highlightable").bind('focusin', function() {
+                    addWordToClassName(this.parentNode.parentNode,"highlighted");
+                    });
+        $(".highlightable").bind('blur', function() {
+                    removeWordFromClassName(this.parentNode.parentNode,"highlighted")
+                    });
+        $("#bank_transfer_selector").bind('change', function() {
+                    $("#bank_transfer_stack").fadeIn('slow');
+                    $("#cheque_dd_stack").hide();
+        });
+        $("#cheque_dd_selector").bind('change', function() {
+                    $("#cheque_dd_stack").fadeIn('slow');
+                    $("#bank_transfer_stack").hide();
+        });
+    }
+    if (window.location.href.endsWith("BankTransferInfo.php")) {
+        $("#bank_transfer_instructions_bank_select").bind('change', function() {
+                    $('.bank_transfer_instructions').hide();
+                    $('#bank_transfer_instructions_bank' + $(this).val()).show();
+        });
+        $('.bank_transfer_instructions_link').popupWindow({ centerScreen: 1 });
+        autoSelectBankInstructions('bank_transfer_instructions_bank_select', $('#bank_transfer_info_bankname').val());
+    }
 });
 
 function validateForm() {
@@ -103,3 +109,36 @@ function removeWordFromClassName(obj, word)
     }
     obj.className = finalList.join(" ");
 }
+
+function autoSelectBankInstructions(selectName, word)
+{
+    var matchingIndex = matchingBankIndex(word);
+    if (matchingIndex == -1) {
+        matchingIndex = 3; // Other
+    }
+    $("#" + selectName).val(matchingIndex);
+    $("#" + selectName).change();
+}
+
+function matchingBankIndex(name)
+{
+    var groups = {
+                    '0' : ['citi',],
+                    '1' : ['icici', 'industrial credit and investment corporation of india'], // :)
+                    '2' : ['sbi', 'state bank']
+                 };
+    var result = -1; // 'Other'
+    jQuery.each(groups, function(k, v) {
+        jQuery.each(v, function() {
+            if (name.toLowerCase().indexOf(this) != -1) {
+                result = k;
+                return false;
+            }
+        });
+        if (result != -1) {
+            return false;
+        }
+    });
+    return result;
+}
+
