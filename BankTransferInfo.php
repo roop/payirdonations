@@ -17,6 +17,7 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="donate.css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.popupWindow.js"></script>
 <script type="text/javascript" src="donate.js"></script>
 </head>
 
@@ -144,6 +145,38 @@
         <tr><th>Account type:</th><td>Savings</td></tr>
         </tbody></table>
     </blockquote>
+    <br/>
+    <p>
+       In case you use one of these banks, we have step-by-step instructions to help you in your transfer.
+    </p>
+    <br/>
+    <select class="select" id="bank_transfer_instructions_bank_select" name="bank_transfer_instructions_bank_select"> 
+        <option value="0" >Citibank India</option>
+        <option value="1" >ICICI Bank</option>
+        <option value="2" >State Bank of India</option>
+        <option value="3" selected>Other</option>
+    </select>
+    &nbsp; &nbsp;
+    <span class="bank_transfer_instructions" id="bank_transfer_instructions_bank0" style="display: none;">
+        <a class="bank_transfer_instructions_link"
+           href="http://docs.google.com/View?id=dgf963vj_0f3fdd3cc">Transferring from CitiBank India</a>
+        <small>(popup)</small>
+    </span>
+    <span class="bank_transfer_instructions" id="bank_transfer_instructions_bank1" style="display: none;">
+        <a class="bank_transfer_instructions_link"
+           href="https://docs.google.com/document/pub?id=1VwbIjKxQyoMXxm3QReFvBqbKVffiLTLkLwhI3zucp08">Transferring from ICICI Bank</a>
+        <small>(popup)</small>
+    </span>
+    <span class="bank_transfer_instructions" id="bank_transfer_instructions_bank2" style="display: none;">
+        <a class="bank_transfer_instructions_link"
+           href="http://docs.google.com/a/payir.org/View?id=d3fgfhx_1cccvjknb">Transferring from State Bank of India</a>
+        <small>(popup)</small>
+    </span>
+    <span class="bank_transfer_instructions" id="bank_transfer_instructions_bank3" style="display: inline;">
+        <small>No instructions available</small>
+    </span>
+    &nbsp;
+    <br/>
     <br/>
     <br/>
     Thank you for your donation. Once we receive the bank transfer,

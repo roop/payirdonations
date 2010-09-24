@@ -1,6 +1,7 @@
 // This code requires jQuery
 
 $(document).ready(function() {
+// In Donate.php
     $(".highlightable").bind('focusin', function() {
                 addWordToClassName(this.parentNode.parentNode,"highlighted");
                 });
@@ -15,6 +16,12 @@ $(document).ready(function() {
                 $("#cheque_dd_stack").fadeIn('slow');
                 $("#bank_transfer_stack").hide();
     });
+// In BankTransfer.php
+    $("#bank_transfer_instructions_bank_select").bind('change', function() {
+                $('.bank_transfer_instructions').hide();
+                $('#bank_transfer_instructions_bank' + $(this).val()).show();
+    });
+    $('.bank_transfer_instructions_link').popupWindow({ centerScreen: 1 });
 });
 
 function validateForm() {
@@ -96,4 +103,3 @@ function removeWordFromClassName(obj, word)
     }
     obj.className = finalList.join(" ");
 }
-
