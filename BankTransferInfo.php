@@ -151,13 +151,6 @@ ENDOFMSG;
 </ul>	
 <p>&nbsp;</p>
 <p align="center"><img src="images/contribute.gif" width="152" height="152" alt border="0"><br><br><i><font size="-1">The influence of a beautiful, helpful character is contagious, and may revolutionize a whole town...</font></i>
-<!--<br><br><i><font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;You can view our current&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></i>
-<i><font size="-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wish list...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></i>
-&nbsp; 
-<a href="https://spreadsheets.google.com/a/payir.org/ccc?key=0AgstJCloYAdqcHRvTUdjMm1HcThubzNwTk9lUXU3RHc&hl=en&authkey=CMTUpeUL#gid=0f#exactline" target="_blank" ><i><font size="-1"  COLOR="#0000FF">here&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></i></a></p><br>
-
-<p><i><span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For electronic fund transfer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;details Read <a href="pdf/BankDetailsforEFT.pdf#exactline" target="_blank"><i><font  COLOR="#0000FF">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this </font> </i> </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document...</span></i></p>-->
-
 
 </p>
 <div id="nav_btm"></div>
