@@ -114,7 +114,7 @@ function autoSelectBankInstructions(selectName, word)
 {
     var matchingIndex = matchingBankIndex(word);
     if (matchingIndex == -1) {
-        matchingIndex = 3; // Other
+        matchingIndex = 2; // Other
     }
     $("#" + selectName).val(matchingIndex);
     $("#" + selectName).change();
@@ -125,7 +125,6 @@ function matchingBankIndex(name)
     var groups = {
                     '0' : ['citi',],
                     '1' : ['icici', 'industrial credit and investment corporation of india'], // :)
-                    '2' : ['sbi', 'state bank']
                  };
     var result = -1; // 'Other'
     jQuery.each(groups, function(k, v) {
