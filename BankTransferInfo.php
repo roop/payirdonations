@@ -197,7 +197,7 @@ ENDOFMSG;
     &nbsp; &nbsp;
     <span class="bank_transfer_instructions" id="bank_transfer_instructions_bank0" style="display: none;">
         <a class="bank_transfer_instructions_link"
-           href="http://docs.google.com/View?id=dgf963vj_0f3fdd3cc">Transferring from CitiBank India</a>
+           href="https://docs.google.com/document/pub?id=1lZdoWJT-YrkM6KtplZdfr_pNc8M4RBMNQKhNj2aGcn0">Transferring from CitiBank India</a>
         <small>(popup)</small>
     </span>
     <span class="bank_transfer_instructions" id="bank_transfer_instructions_bank1" style="display: none;">
