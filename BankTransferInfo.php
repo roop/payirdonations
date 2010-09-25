@@ -70,22 +70,22 @@ ENDOFMSG;
 <tr>
 <td>
 <!--- Top shade Starts for 100% -->
-<tr><td width="30" style="background: url('images/left_corner1.gif') no-repeat top"><img src="images/Leftcorner_1.gif" width="30" height="27" alt border="0"></td>
-<td width="100%" style="background: url('images/top_shade.gif') repeat-y top"><img src="images/top_shade.gif" width="100%" height="27" alt border="0"></td>
-<td width="30" style="background: url('images/rightcorner_1.gif') no-repeat top"><img src="images/rightcorner_1.gif" width="30" height="27" alt border="0"></td>
+<tr><td width="30" style="background: url('images/left_corner1.gif') no-repeat top"><img src="images/Leftcorner_1.gif" width="30" height="27" alt="" border="0"></td>
+<td width="100%" style="background: url('images/top_shade.gif') repeat-y top"><img src="images/top_shade.gif" width="100%" height="27" alt="" border="0"></td>
+<td width="30" style="background: url('images/rightcorner_1.gif') no-repeat top"><img src="images/rightcorner_1.gif" width="30" height="27" alt="" border="0"></td>
 </tr>
 <!--- Top shade ends for 100% -->
 
 <tr> <!-- Central content area TR 3 starts  -->
 <!--- Left shade starts -->
-<td align="left" height="100%" style="background: url('images/Left_shade.gif') repeat-y top"><img src="images/Left_shade.gif" width="30" height="1" alt border="0"></td>
+<td align="left" height="100%" style="background: url('images/Left_shade.gif') repeat-y top"><img src="images/Left_shade.gif" width="30" height="1" alt="" border="0"></td>
 
 <td> <!-- central TD Starts  -->
 <!--- Mid content for Logo/banner starts-->
 <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0">
 <tr valign="bottom">
 <td valign="bottom" colspan="0" align="left"><a href="/">
-<img src="images/logo_banner_v2.gif" alt border="0" width="342" height="82"></a></td>
+<img src="images/logo_banner_v2.gif" alt="" border="0" width="342" height="82"></a></td>
 <td valign="bottom" align="right">
 <div id="top-sidebar">
 <a href="medianews.html">Read our newsletters</a><br>
@@ -100,34 +100,34 @@ ENDOFMSG;
  <!-- Central content area TABLE 2 Starts  -->
 <table align="center" width="750" cellpadding="0" cellspacing="0" border="0">
 <tr align="right">  <!-- TR 5 starts  -->
-<td bgcolor="#666666" valign="top"><div style="background:#ffffff"><img src="images/Spacer.gif" width="1" height="4" alt></div>
-<img src="images/Spacer.gif" width="1" height="27" alt><br>
-<div style="background:#ffffff"><img src="images/Spacer.gif" width="1" height="9" alt></div>
+<td bgcolor="#666666" valign="top"><div style="background:#ffffff"><img src="images/Spacer.gif" width="1" height="4" alt=""></div>
+<img src="images/Spacer.gif" width="1" height="27" alt=""><br>
+<div style="background:#ffffff"><img src="images/Spacer.gif" width="1" height="9" alt=""></div>
 </td> 
 
 <td style="background: #68A700 url('images/ab_corner_ShadowGreen.jpg') repeat-x top;" align="center">
 <table align="center" width="596" cellpadding="0" cellspacing="0" border="0">
 <tr> 
-<td width="118"><a href="home.html" target="_self"><img src="images/menu_home_off.gif" width="118" height="35" alt border="0"></a></td>
-<td width="118"><a href="projects.html" target="_self"><img src="images/menu_projects_off.gif" width="118" height="35" alt border="0"></a></td>
-<td width="118"><a href="http://blog.payir.org/" target="_self"><img src="images/menu_blog_off.gif" width="118" height="35" alt border="0"></a></td>
-<td width="118"><a href="medianews.html" target="_self"><img src="images/menu_news_off.gif" width="118" height="35" alt border="0"></a></td>
-<td width="118"><a href="vision.html" target="_self"><img src="images/menu_whoweare_off.gif" width="118" height="35" alt border="0"></a></td>
+<td width="118"><a href="home.html" target="_self"><img src="images/menu_home_off.gif" width="118" height="35" alt="" border="0"></a></td>
+<td width="118"><a href="projects.html" target="_self"><img src="images/menu_projects_off.gif" width="118" height="35" alt="" border="0"></a></td>
+<td width="118"><a href="http://blog.payir.org/" target="_self"><img src="images/menu_blog_off.gif" width="118" height="35" alt="" border="0"></a></td>
+<td width="118"><a href="medianews.html" target="_self"><img src="images/menu_news_off.gif" width="118" height="35" alt="" border="0"></a></td>
+<td width="118"><a href="vision.html" target="_self"><img src="images/menu_whoweare_off.gif" width="118" height="35" alt="" border="0"></a></td>
 </tr>  
 <tr>
-<td style="background: #68A700 url('images/ab_green_shadow.jpg') repeat-x top"><img src="images/Spacer.gif" width="1" height="5" alt border="0"></td>
-<td style="background: #68A700 url('images/ab_green_shadow.jpg') repeat-x top"><img src="images/Spacer.gif" width="1" height="5" alt border="0"></td>
-<td style="background: #68A700 url('images/ab_green_shadow.jpg') repeat-x top"><img src="images/Spacer.gif" width="1" height="5" alt border="0"></td>
-<td style="background: #68A700;"><img src="images/Spacer.gif" width="1" height="1" alt></td>
-<td style="background: #68A700 url('images/ab_green_shadow.jpg') repeat-x top"><img src="images/Spacer.gif" width="1" height="5" alt border="0"></td>
+<td style="background: #68A700 url('images/ab_green_shadow.jpg') repeat-x top"><img src="images/Spacer.gif" width="1" height="5" alt="" border="0"></td>
+<td style="background: #68A700 url('images/ab_green_shadow.jpg') repeat-x top"><img src="images/Spacer.gif" width="1" height="5" alt="" border="0"></td>
+<td style="background: #68A700 url('images/ab_green_shadow.jpg') repeat-x top"><img src="images/Spacer.gif" width="1" height="5" alt="" border="0"></td>
+<td style="background: #68A700;"><img src="images/Spacer.gif" width="1" height="1" alt=""></td>
+<td style="background: #68A700 url('images/ab_green_shadow.jpg') repeat-x top"><img src="images/Spacer.gif" width="1" height="5" alt="" border="0"></td>
 </tr>
 </table>
 </td>
 
 <td bgcolor="#666666" valign="top">
-<div style="background:#ffffff"><img src="images/Spacer.gif" width="1" height="4" alt></div>
-<img src="images/Spacer.gif" width="1" height="27" alt><br>
-<div style="background:#ffffff"><img src="images/Spacer.gif" width="1" height="9" alt></div>
+<div style="background:#ffffff"><img src="images/Spacer.gif" width="1" height="4" alt=""></div>
+<img src="images/Spacer.gif" width="1" height="27" alt=""><br>
+<div style="background:#ffffff"><img src="images/Spacer.gif" width="1" height="9" alt=""></div>
 </td>
 
 </tr> <!-- TR 5 ends-  -->
@@ -150,7 +150,7 @@ ENDOFMSG;
 <li><a href="Contribution.html" target="_self"><b><U>Contribute</U></b></a></li>					
 </ul>	
 <p>&nbsp;</p>
-<p align="center"><img src="images/contribute.gif" width="152" height="152" alt border="0"><br><br><i><font size="-1">The influence of a beautiful, helpful character is contagious, and may revolutionize a whole town...</font></i>
+<p align="center"><img src="images/contribute.gif" width="152" height="152" alt="" border="0"><br><br><i><font size="-1">The influence of a beautiful, helpful character is contagious, and may revolutionize a whole town...</font></i>
 
 </p>
 <div id="nav_btm"></div>
@@ -161,7 +161,7 @@ ENDOFMSG;
 <div id="TopText">
 <br>
 <h4>Support Payir: Donate by bank transfer</h4>
-<br/>
+<br>
     <p>
        Thank you for deciding to donate to Payir by bank transfer.
        Please find our bank account information below:
@@ -171,23 +171,23 @@ ENDOFMSG;
         <table><tbody>
         <tr><th>Bank name:</th><td>State Bank of India</td></tr>
         <tr><th>Bank branch:</th><td>Srirangam</td></tr>
-        <tr><th>Bank address:</th><td>1 South Uthra Street, Srirangam, <br/>
+        <tr><th>Bank address:</th><td>1 South Uthra Street, Srirangam, <br>
                                       Tiruchy, Tamil Nadu, India, 620006</td></tr>
         <tr><th>IFSC code:</th><td>SBIN0001983<span>(for transfers within India)</span></td></tr>
         <tr><th>SWIFT code:</th><td>SBININBB246<span>(if your bank is outside India)</span></td></tr>
         <tr><th>Account number:</th><td><?php echo $bankAccountNumber ?></td></tr>
-        <tr><th>Account name:</td><td>Payir Trust</td></tr>
+        <tr><th>Account name:</th><td>Payir Trust</td></tr>
         <tr><th>Account type:</th><td><?php echo $bankAccountType ?></td></tr>
         </tbody></table>
     </blockquote>
-    <br/>
+    <br>
     <?php
         if ($nationality == 0 || $nationality == 1) {
             echo <<<END
     <p>
        In case you use one of these Indian banks, we have step-by-step instructions to help you in your transfer.
     </p>
-    <br/>
+    <br>
     <select class="select" id="bank_transfer_instructions_bank_select" name="bank_transfer_instructions_bank_select"> 
         <option value="0" >Citibank India</option>
         <option value="1" >ICICI Bank</option>
@@ -214,42 +214,41 @@ ENDOFMSG;
         <small>No instructions available</small>
     </span>
     &nbsp;
-    <br/>
+    <br>
 END;
     }
     echo <<<END
-    <input type="hidden" id="bank_transfer_info_bankname" value="{$_REQUEST['bankname']}" />
+    <input type="hidden" id="bank_transfer_info_bankname" value="{$_REQUEST['bankname']}">
 END;
     ?>
-    <br/>
+    <br>
     Thank you for your donation. Once we receive the bank transfer,
-    we will send you the following to the postal address you have specified: <br/>
+    we will send you the following to the postal address you have specified: <br>
     <ul>
         <li>A receipt for your donation</li>
         <li>A donation certificate for claiming your tax benefit on your donation under Section 80G of the Indian Income Tax Act </li>
     </ul>
-    <br/>
-    We will also send you our newsletter by email (once a year) to keep you informed of how your money was utilized.<br/>
-    <br/>
-    </p>
+    <br>
+    We will also send you our newsletter by email (once a year) to keep you informed of how your money was utilized.<br>
+    <br>
     <p>
-       <br/>
-       The details you had furnished are summarized below:<br/>
+       <br>
+       The details you had furnished are summarized below:<br>
        <blockquote class="lightweight">
-           <b>About you</b><br/>
+           <b>About you</b><br>
            <p class="indent">
            <?php
 echo <<<END
-           {$_REQUEST['name']} &nbsp; &lt;{$_REQUEST['email']}&gt; <br/>
-           {$_REQUEST['address_1']} <br/>
-           {$_REQUEST['address_2']} &nbsp; {$_REQUEST['address_3']}<br/>
-           {$_REQUEST['address_4']} &nbsp; {$_REQUEST['address_5']}<br/>
-           You are {$nationalityString}<br/>
+           {$_REQUEST['name']} &nbsp; &lt;{$_REQUEST['email']}&gt; <br>
+           {$_REQUEST['address_1']} <br>
+           {$_REQUEST['address_2']} &nbsp; {$_REQUEST['address_3']}<br>
+           {$_REQUEST['address_4']} &nbsp; {$_REQUEST['address_5']}<br>
+           You are {$nationalityString}<br>
 END;
            ?>
            </p>
-           <br/>
-           <b>About your transfer</b><br/>
+           <br>
+           <b>About your transfer</b><br>
            <p class="indent">
            <?php
 echo <<<END
@@ -260,20 +259,17 @@ END;
             ?>
            </p>
        </blockquote>
-       <br/>
-       <p>
+       <br>
+       <br>
        If you have any further information about your donation (like transaction id)
        or would like to amend the information you'd provided, you can let us
-       know here:</br>
-       <form name="bank_transfer_additional_info_form" method="post" action="BankTransferAdditionalInfo.php">
-           <input type="hidden" name="payir_form_name" value="bank_transfer_additional_info_form" />
-           <input type="hidden" name="payir_transaction_id" <?php echo "value=\"{$_REQUEST['payir_transaction_id']}\"" ?> />
-           <textarea rows="4" id="bank_transfer_additional_info" name="bank_transfer_additional_info"></textarea>
-           <input id="submitAdditionalBankTransferInfo" class="button_text" type="submit" name="submit" value="Submit additional info"/>
+       know here:<br>
+       <form id="bank_transfer_additional_info_form" method="post" action="BankTransferAdditionalInfo.php">
+           <input type="hidden" name="payir_form_name" value="bank_transfer_additional_info_form">
+           <input type="hidden" name="payir_transaction_id" <?php echo "value=\"{$_REQUEST['payir_transaction_id']}\"" ?> >
+           <textarea rows="4" id="bank_transfer_additional_info" name="bank_transfer_additional_info" cols="0"></textarea>
+           <input id="submitAdditionalBankTransferInfo" class="button_text" type="submit" name="submit" value="Submit additional info">
        </form>
-       </p>
-    </p>
-</div> <!-- div class="section" -->
 </div> <!-- TopText -->
 </td>
 </tr>
@@ -291,14 +287,14 @@ END;
 
 
 <!--- Right shade starts for 100% -->
-<td height="100%" style="background: url('images/right_shade.gif') repeat-y top"><img src="images/right_shade.gif" width="30" height="1" alt border="0"></td>
+<td height="100%" style="background: url('images/right_shade.gif') repeat-y top"><img src="images/right_shade.gif" width="30" height="1" alt="" border="0"></td>
 </tr> <!-- Central content area TR 3 ends  -->
 
 <!--- Bottom shade starts for 100% -->
 <tr>
-<td align="left" width="30" style="background: url('images/left_corner2.gif') no-repeat top"><img src="images/Leftcorner_2.gif" width="30" height="27" alt border="0"></td>
-<td align="center" width="100%" style="background: url('images/bottom_shade.gif') repeat-y top"><img src="images/bottom_shade.gif" width="100%" height="27" alt border="0"></td>
-<td align="right" width="30" style="background: url('images/rightcorner_2.gif') no-repeat top"><img src="images/rightcorner_2.gif" width="30" height="27" alt border="0"></td>
+<td align="left" width="30" style="background: url('images/left_corner2.gif') no-repeat top"><img src="images/Leftcorner_2.gif" width="30" height="27" alt="" border="0"></td>
+<td align="center" width="100%" style="background: url('images/bottom_shade.gif') repeat-y top"><img src="images/bottom_shade.gif" width="100%" height="27" alt="" border="0"></td>
+<td align="right" width="30" style="background: url('images/rightcorner_2.gif') no-repeat top"><img src="images/rightcorner_2.gif" width="30" height="27" alt="" border="0"></td>
 </tr>
 <!--- Bottom shade ends for 100% -->
 
