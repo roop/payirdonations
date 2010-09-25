@@ -118,9 +118,24 @@ You can make a difference to a village by making a donation now.<br>
 Since we manage the finances and delivery of our programs end to
 end, we can ensure that the whole of your contribution is spent on
 actual projects. We keep our operational overheads very low.<br>
-<br>
-
-<i>Link financial reports here</i><br><br>
+<blockquote class="lightweight">
+    <div style="display: inline-block; vertical-align: top;">
+        <a href="http://spreadsheets.google.com/pub?key=0AniZyaH522ZkdC00Q2lDbGQ3eG5VVExjdW1HUm1xWWc&hl=en&output=html&gid=3">
+        <img src="images/spreadsheet-icon.png" alt="Accounts for Finacial Year 2006-07">
+        </a>
+    </div>
+    <div style="display: inline-block; vertical-align: top;">
+        Accounts for FY 2006-07
+    </div>
+    <div style="display: inline-block; vertical-align: top; width:20px;">
+    </div>
+    <div style="display: inline-block; vertical-align: top;">
+        <a href="http://spreadsheets.google.com/pub?key=0AniZyaH522ZkdGhQQ3R0NFdHY2ExcGkwOVQ5THNBQUE&hl=en&output=html&gid=1">
+        <img src="images/spreadsheet-icon.png" alt="Accounts for Finacial Year 2005-06">
+        </a>
+    </div>
+    <div style="display: inline-block; vertical-align: top;">Accounts for FY 2005-06</div>
+</blockquote>
 
 To give you an idea of the order of costs involved in our activities:
 <ul>
