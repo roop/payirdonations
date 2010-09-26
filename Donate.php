@@ -287,9 +287,8 @@ How would you like to donate?<br>
                     </select>
                     <label class="guidelines" for="nationality">
                     We maintain contributions from Indian and non-Indian donors in separate
-                    bank accounts as per <a href="http://www.fcraforngos.org/"
-                    style="color: inherit;" tabindex=0 >FCRA</a> regulations. So the account
-                    in which we'd like to receive your donation depends on your nationality.
+                    bank accounts as per FCRA regulations. (See <a href="http://www.fcraforngos.org/"
+                    style="color: inherit;" tabindex=0 >www.FcraForNgos.org</a> for details.)
                     </label>
                 </div> 
             </li><li>
