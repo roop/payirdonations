@@ -15,7 +15,7 @@ Additional information:
 {$_REQUEST['bank_transfer_additional_info']}
 
 ENDOFMSG;
-    mail("roop@knurd.in", $subject, $body, "From: no-reply@payir.org");
+    mail("donations@payir.org", $subject, $body, "From: no-reply@payir.org");
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">

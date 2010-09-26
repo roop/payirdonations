@@ -38,7 +38,7 @@ Bank name: {$_REQUEST['bankname']}
 This email is not a confirmation of the transfer - just a heads-up
 for a possible future transfer.
 ENDOFMSG;
-    mail("roop@knurd.in", $subject, $body, "From: no-reply@payir.org");
+    mail("donations@payir.org", $subject, $body, "From: no-reply@payir.org");
     
     $nationality = $_REQUEST['nationality'];
     # what info should we give the donor?
