@@ -214,7 +214,8 @@ END;
     echo <<<END
     <input type="hidden" id="bank_transfer_info_bankname" value="{$_REQUEST['bankname']}">
 END;
-    ?>
+    if ($_REQUEST['address_5'] == 'India') {
+    echo <<<END
     <br>
     Thank you for your donation. Once we receive the bank transfer,
     we will send you the following to the postal address you have specified: <br>
@@ -223,6 +224,24 @@ END;
         <li>A donation certificate for claiming your tax benefit on your donation under Section 80G of the Indian Income Tax Act </li>
     </ul>
     <br>
+END;
+    } else {
+    echo <<<END
+    <br>
+    Thank you for your donation. We normally send the following to
+    the donors by post:
+    <ul>
+        <li>A receipt for your donation</li>
+        <li>A donation certificate for claiming your tax benefit on your donation under Section 80G of the Indian Income Tax Act </li>
+    </ul>
+    <br>
+    But we will not be able to send these to an address outside India. If you
+    have an Indian address to which we can send these, please let us know
+    by email at <a href="mailto:donations@payir.org">donations@payir.org</a>.<br>
+    <br>
+END;
+    }
+    ?>
     We will also send you our newsletter by email (once a year) to keep you informed of how your money was utilized.<br>
     <br>
     <p>
