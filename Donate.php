@@ -111,7 +111,7 @@
 <br>
 Payir is a non-profit charitable trust and runs a majority of its operations
 on donations from well wishers. Apart from specific projects sponsored by our
-<a href="/partners.html">partner organizations</a>, we operate solely 
+<a href="/partners_dev.html">partner organizations</a>, we operate solely 
 out of contributions from individuals.
 You can make a difference to a village by making a donation now.<br>
 <br>

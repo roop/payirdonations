@@ -382,6 +382,12 @@ blockquote table th
     width: 30%;
 }
 
+blockquote table th.center
+{
+    text-align: center;
+    width: 30%;
+}
+
 blockquote table td
 {
     text-align: left;
