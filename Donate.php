@@ -273,7 +273,7 @@ How would you like to donate?<br>
                     you to claim your tax benefits under Section 80G of the Indian Income Tax
                     Act. In case you'd like to receive the certificate on another address, please
                     let us know at <a href="mailto:donate@payir.org" style="color: inherit;"
-                    tabindex=0 >donations@payir.org</a>.
+                    tabindex="-1" >donations@payir.org</a>.
                     </label>
                 </div>
             </li><li>
@@ -288,7 +288,7 @@ How would you like to donate?<br>
                     <label class="guidelines" for="nationality">
                     We maintain contributions from Indian and non-Indian donors in separate
                     bank accounts as per FCRA regulations. (See <a href="http://www.fcraforngos.org/"
-                    style="color: inherit;" tabindex=0 >www.FcraForNgos.org</a> for details.)
+                    style="color: inherit;" tabindex="-1" >www.FcraForNgos.org</a> for details.)
                     </label>
                 </div> 
             </li><li>
