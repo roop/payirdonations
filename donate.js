@@ -14,9 +14,16 @@ $(document).ready(function() {
         $("#bank_transfer_selector").bind('change', function() {
                     $("#bank_transfer_stack").fadeIn('slow');
                     $("#cheque_dd_stack").hide();
+                    $("#in_kind_stack").hide();
         });
         $("#cheque_dd_selector").bind('change', function() {
                     $("#cheque_dd_stack").fadeIn('slow');
+                    $("#bank_transfer_stack").hide();
+                    $("#in_kind_stack").hide();
+        });
+        $("#in_kind_selector").bind('change', function() {
+                    $("#in_kind_stack").fadeIn('slow');
+                    $("#cheque_dd_stack").hide();
                     $("#bank_transfer_stack").hide();
         });
     }
