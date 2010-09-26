@@ -17,11 +17,12 @@
     # javascript in his browser.
 
     # mail the details to donation-alert@payir.org
-    $subject      = "Bank transfer from {$_REQUEST['name']} for Rs. {$_REQUEST['amount']}";
+    $subject      = "Donation: Bank transfer from {$_REQUEST['name']} for Rs. {$_REQUEST['amount']}";
     $body         = <<<ENDOFMSG
 A potential donor submitted the following bank transfer details
 in the form at http://www.payir.org/Donate.php :
 
+Payir Transaction Id: {$_REQUEST['payir_transaction_id']}
 Name: {$_REQUEST['name']}
 Email: {$_REQUEST['email']}
 Address:
@@ -37,7 +38,7 @@ Bank name: {$_REQUEST['bankname']}
 This email is not a confirmation of the transfer - just a heads-up
 for a possible future transfer.
 ENDOFMSG;
-#    mail("roop@knurd.in", $subject, $body, "From: no-reply@payir.org");
+    mail("roop@knurd.in", $subject, $body, "From: no-reply@payir.org");
     
     $nationality = $_REQUEST['nationality'];
     # what info should we give the donor?

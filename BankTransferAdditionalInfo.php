@@ -6,7 +6,7 @@
     }
 
     # mail the details to donation-alert@payir.org
-    $subject      = "Additional info on bank transfer";
+    $subject      = "Donation: Additional info on bank transfer";
     $body         = <<<ENDOFMSG
 The potential donor submitted additional information:
 
@@ -15,7 +15,7 @@ Additional information:
 {$_REQUEST['bank_transfer_additional_info']}
 
 ENDOFMSG;
-#    mail("roop@knurd.in", $subject, $body, "From: no-reply@payir.org");
+    mail("roop@knurd.in", $subject, $body, "From: no-reply@payir.org");
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
