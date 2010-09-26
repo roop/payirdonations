@@ -137,14 +137,22 @@ actual projects. We keep our operational overheads very low.<br>
     <div style="display: inline-block; vertical-align: top;">Accounts for FY 2005-06</div>
 </blockquote>
 
-To give you an idea of the order of costs involved in our activities:
+We welcome contributions in any denomination. To give you an idea of the amount of change your money can bring about:
 <ul>
-    <li>With <b>Rs.100/-</b> we can... er, let me think about that...</li>
-    <li><b>Rs.2000/-</b> will help us provide breakfast for a school
-        child for 1 year</li>
-    <li>With <b>Rs.20000/-</b>, we can provide education for one
-        child in Payir Learning Center for 1 year</li>
+    <li>
+        <b>Rs. 2000/-</b> can sponsor our Nutrient Supplement Program
+        for an undernourished child for a year
+    </li>
+    <li>
+        With <b>Rs. 2000/-</b> we can provide breakfast for 
+        one child in primary school for a year
+    </li>
+    <li>
+        <b>Rs. 6000/-</b> can sponsor a child's education in the
+        Payir Learning Center for a year
+    </li>
 </ul>
+
 <br>
 You can contribute either by bank transfer or by cheque/DD.
 If you are an Indian taxpayer, your donation is eligible for tax
