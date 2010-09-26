@@ -265,15 +265,13 @@ END;
            <p class="indent">
            <?php
 echo <<<END
-           You intend to transfer an amount of {$_REQUEST['amount']}
+           You intend to transfer an amount of <i>&quot;{$_REQUEST['amount']}&quot;</i>
            (in INR, unless otherwise specified)
-           from bank {$_REQUEST['bankname']}
+           from bank <i>&quot;{$_REQUEST['bankname']}&quot;</i>
 END;
             ?>
            </p>
        </blockquote>
-       <br>
-       <br>
        If you have any further information about your donation (like transaction id)
        or would like to amend the information you'd provided, you can let us
        know here:<br>
