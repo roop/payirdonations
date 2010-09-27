@@ -408,6 +408,11 @@ blockquote.lightweight
     margin: 15px 0;
 }
 
+blockquote img
+{
+    border: none;
+}
+
 textarea#bank_transfer_additional_info
 {
     width: 100%;
