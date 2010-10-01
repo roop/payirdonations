@@ -123,7 +123,7 @@ ENDOFMSG;
 </div>
 </td>
 <td width="10" align="left">&nbsp;</td>
-<td align="justify">
+<td align="left">
 <div id="TopText">
 <br>
 <br>

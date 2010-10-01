@@ -104,7 +104,7 @@
 </div>
 </td>
 <td width="10" align="left">&nbsp;</td>
-<td align="justify">
+<td align="left">
 <div id="TopText">
 <br>
 <h4>Support Payir: Donate now</h4>
