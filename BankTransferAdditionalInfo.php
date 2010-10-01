@@ -24,9 +24,6 @@ ENDOFMSG;
 <title>Donation by bank transfer - Payir</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="donate.css">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.popupWindow.js"></script>
-<script type="text/javascript" src="donate.js"></script>
 </head>
 
 <body>
