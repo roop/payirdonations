@@ -182,17 +182,26 @@ exemption under Section 80G.<br>
 <div class="section roundedrect">
 
 How would you like to donate?<br>
-<div class="margined">
-<input type="radio" name="payment_mode" id="bank_transfer_selector" value="bank_transfer_mode" checked>
-   <label class="choice">By bank transfer</label><br>
-<input type="radio" name="payment_mode" id="cheque_dd_selector" value="cheque_dd_mode">
-   <label class="choice">By cheque or demand draft</label><br>
+<div id="donation-options" class="margined">
+    <ul>
+        <li><a href="#banktransfer">By bank transfer</a></li>
+        <li><a href="#chequedd">By cheque or demand draft</a></li>
+    </ul>
 </div>
-
+<script type="text/javascript">
+    <!-- // if javascript is enabled, replace the above target links with radio buttons
+        $("#donation-options").html(
+                 '<input type="radio" name="payment_mode" id="bank_transfer_selector" value="bank_transfer_mode" checked>' +
+                 '   <label class="choice">By bank transfer</label><br>' +
+                 '<input type="radio" name="payment_mode" id="cheque_dd_selector" value="cheque_dd_mode">' +
+                 '   <label class="choice">By cheque or demand draft</label><br>'
+                 );
+    -->
+</script>
     <div id="bank_transfer_stack" class="payment_mode_stack" style="display: block;">
         <form id="bank_transfer_form" method="post" action="BankTransferInfo.php">
             <div class="stack_description">
-                <h3>By bank transfer</h3>
+                <h3><a name="banktransfer" style="color: inherit; text-decoration: inherit;">By bank transfer</a></h3>
                 <p>
                 Using the netbanking facility of your bank, you
                 can transfer your donation to us through your bank's website.
@@ -333,10 +342,10 @@ How would you like to donate?<br>
         </form>    
     </div> <!-- div bank_transfer_stack -->
 
-    <div id="cheque_dd_stack" class="payment_mode_stack" style="display: none;">
+    <div id="cheque_dd_stack" class="payment_mode_stack" style="display: block;">
         <div id="cheque_dd_div">
             <div class="stack_description">
-            <h3>By cheque / DD</h3>
+            <h3><a name="chequedd" style="color: inherit; text-decoration: inherit;">By cheque / DD</a></h3>
             <p>
                Please write a crossed cheque or demand draft payable to &quot;<b>Payir Trust</b>&quot; and mail it to us at: 
                <br>

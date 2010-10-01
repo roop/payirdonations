@@ -19,6 +19,9 @@ $(document).ready(function() {
                     $("#cheque_dd_stack").fadeIn('slow');
                     $("#bank_transfer_stack").hide();
         });
+        // show only bank-transfer on startup (if js is enabled)
+        $(".payment_mode_stack").hide();
+        $("#bank_transfer_stack").show();
     }
     if (window.location.href.endsWith("BankTransferInfo.php")) {
         $("#bank_transfer_instructions_bank_select").bind('change', function() {
