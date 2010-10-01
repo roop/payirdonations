@@ -163,12 +163,14 @@ ENDOFMSG;
 <br>
 <h4>Support Payir: Donate by bank transfer</h4>
 <br>
+<?php
+echo <<<END
     <p>
        Thank you for deciding to donate to Payir by bank transfer.
        Please find our bank account information below:
     </p>
     <blockquote class="roundedrect">
-        <h3><?php echo $bankDetailsTitle ?></h3>
+        <h3>$bankDetailsTitle</h3>
         <table><tbody>
         <tr><th>Bank name:</th><td>State Bank of India</td></tr>
         <tr><th>Bank branch:</th><td>Srirangam</td></tr>
@@ -176,13 +178,13 @@ ENDOFMSG;
                                       Tiruchy, Tamil Nadu, India, 620006</td></tr>
         <tr><th>IFSC code:</th><td>SBIN0001983<span>(for transfers within India)</span></td></tr>
         <tr><th>SWIFT code:</th><td>SBININBB246<span>(if your bank is outside India)</span></td></tr>
-        <tr><th>Account number:</th><td><?php echo $bankAccountNumber ?></td></tr>
+        <tr><th>Account number:</th><td>$bankAccountNumber</td></tr>
         <tr><th>Account name:</th><td>Payir Trust</td></tr>
-        <tr><th>Account type:</th><td><?php echo $bankAccountType ?></td></tr>
+        <tr><th>Account type:</th><td>$bankAccountType</td></tr>
         </tbody></table>
     </blockquote>
     <br>
-    <?php
+END
         if ($nationality == 0 || $nationality == 1) {
             echo <<<END
     <p>
@@ -211,7 +213,7 @@ ENDOFMSG;
     &nbsp;
     <br>
 END;
-    }
+    } # end of if nationality
     echo <<<END
     <input type="hidden" id="bank_transfer_info_bankname" value="{$_REQUEST['bankname']}">
 END;
@@ -226,7 +228,7 @@ END;
     </ul>
     <br>
 END;
-    } else {
+    } else { # end of if address
     echo <<<END
     <br>
     Thank you for your donation. We normally send the following to
@@ -241,8 +243,8 @@ END;
     by email at <a href="mailto:donations@payir.org">donations@payir.org</a>.<br>
     <br>
 END;
-    }
-    ?>
+    } # end of else address
+    echo <<<END;
     We will also send you our newsletter by email (once a year) to keep you informed of how your money was utilized.<br>
     <br>
     <p>
@@ -251,37 +253,31 @@ END;
        <blockquote class="lightweight">
            <b>About you</b><br>
            <p class="indent">
-           <?php
-echo <<<END
            {$_REQUEST['name']} &nbsp; &lt;{$_REQUEST['email']}&gt; <br>
            {$_REQUEST['address_1']} <br>
            {$_REQUEST['address_2']} &nbsp; {$_REQUEST['address_3']}<br>
            {$_REQUEST['address_4']} &nbsp; {$_REQUEST['address_5']}<br>
            You are {$nationalityString}<br>
-END;
-           ?>
            </p>
            <br>
            <b>About your transfer</b><br>
            <p class="indent">
-           <?php
-echo <<<END
            You intend to transfer an amount of <i>&quot;{$_REQUEST['amount']}&quot;</i>
            (in INR, unless otherwise specified)
            from bank <i>&quot;{$_REQUEST['bankname']}&quot;</i>
-END;
-            ?>
            </p>
        </blockquote>
        If you have any further information about your donation (like transaction id)
-       or would like to amend the information you'd provided, you can let us
+       or would like to amend the information you had provided, you can let us
        know here:<br>
        <form id="bank_transfer_additional_info_form" method="post" action="BankTransferAdditionalInfo.php">
            <input type="hidden" name="payir_form_name" value="bank_transfer_additional_info_form">
-           <input type="hidden" name="payir_transaction_id" <?php echo "value=\"{$_REQUEST['payir_transaction_id']}\"" ?> >
+           <input type="hidden" name="payir_transaction_id" "value=\"{$_REQUEST['payir_transaction_id']}\"">
            <textarea rows="4" id="bank_transfer_additional_info" name="bank_transfer_additional_info" cols="0"></textarea>
            <input id="submitAdditionalBankTransferInfo" class="button_text" type="submit" name="submit" value="Submit additional info">
        </form>
+END
+?>
 </div> <!-- TopText -->
 </td>
 </tr>
