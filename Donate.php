@@ -310,7 +310,7 @@ How would you like to donate?<br>
                 </div> 
             </li><li>
                 <div class="left">
-                    <label class="description" for="amount">Amount (Rs.) *</label>
+                    <label class="description" for="amount">Amount (INR) *</label>
                     <input id="amount" name="amount" class="highlightable text medium" type="text" maxlength="255" value="" placeholder="e.g. '2000' or '500 USD'"> 
                 </div> 
                 <div class="right">

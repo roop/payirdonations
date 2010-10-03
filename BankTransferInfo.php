@@ -50,7 +50,7 @@ Address:
 {$_REQUEST['address_4']}
 {$_REQUEST['address_5']}
 Nationality: $nationalityString
-Amount (Rs.): {$_REQUEST['amount']}
+Amount (in INR unless otherwise specified): {$_REQUEST['amount']}
 Bank name: {$_REQUEST['bankname']}
 
 This email is not a confirmation of the transfer - just a heads-up
