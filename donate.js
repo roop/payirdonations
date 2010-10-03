@@ -19,7 +19,13 @@ $(document).ready(function() {
                     $("#cheque_dd_stack").fadeIn('slow');
                     $("#bank_transfer_stack").hide();
         });
-        // show only bank-transfer on startup (if js is enabled)
+        // since we have js up and running, replace target links with radio buttons, select bank transfer by default
+        $("#donation-options").html(
+         '<input type="radio" name="payment_mode" id="bank_transfer_selector" value="bank_transfer_mode" checked>' +
+         '   <label class="choice">By bank transfer</label><br>' +
+         '<input type="radio" name="payment_mode" id="cheque_dd_selector" value="cheque_dd_mode">' +
+         '   <label class="choice">By cheque or demand draft</label><br>'
+        );
         $(".payment_mode_stack").hide();
         $("#bank_transfer_stack").show();
     }

@@ -183,21 +183,12 @@ exemption under Section 80G.<br>
 
 How would you like to donate?<br>
 <div id="donation-options" class="margined">
+    <!-- if js is enabled, js code replaces the following content with radio buttons -->
     <ul>
         <li><a href="#banktransfer">By bank transfer</a></li>
         <li><a href="#chequedd">By cheque or demand draft</a></li>
     </ul>
 </div>
-<script type="text/javascript">
-    <!-- // if javascript is enabled, replace the above target links with radio buttons
-        $("#donation-options").html(
-                 '<input type="radio" name="payment_mode" id="bank_transfer_selector" value="bank_transfer_mode" checked>' +
-                 '   <label class="choice">By bank transfer</label><br>' +
-                 '<input type="radio" name="payment_mode" id="cheque_dd_selector" value="cheque_dd_mode">' +
-                 '   <label class="choice">By cheque or demand draft</label><br>'
-                 );
-    -->
-</script>
     <div id="bank_transfer_stack" class="payment_mode_stack" style="display: block;">
         <form id="bank_transfer_form" method="post" action="BankTransferInfo.php">
             <div class="stack_description">
