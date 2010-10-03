@@ -22,7 +22,7 @@ $(document).ready(function() {
             $("#bank_transfer_selector").attr('checked', true);
         }
         // highlight parts that are being filled up
-        $(".highlightable").bind('focusin', function() {
+        $(".highlightable").bind('focus', function() {
                     addWordToClassName(this.parentNode.parentNode,"highlighted");
                     });
         $(".highlightable").bind('blur', function() {
