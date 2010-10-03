@@ -270,7 +270,7 @@ END;
 END;
     } # end of else address
     echo <<<END
-    We will also send you our newsletter by email (once a year) to keep you informed of how your money was utilized.<br>
+    We will also send you our annual report by email to keep you informed of how your money was utilized.<br>
     <br>
     <p>
        <br>
