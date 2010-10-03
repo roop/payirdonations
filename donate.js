@@ -23,10 +23,10 @@ $(document).ready(function() {
         }
         // highlight parts that are being filled up
         $(".highlightable").bind('focus', function() {
-                    addWordToClassName(this.parentNode.parentNode,"highlighted");
+                    $(this).parent().parent("li").addClass("highlighted");
                     });
         $(".highlightable").bind('blur', function() {
-                    removeWordFromClassName(this.parentNode.parentNode,"highlighted")
+                    $(this).parent().parent("li").removeClass("highlighted");
                     });
         // show the bank transfer mode per radio selection
         $("#bank_transfer_selector").bind('change', function() {
@@ -67,17 +67,17 @@ function validateForm() {
         if (elem && !isValueCorrectInInputBox(elem)) {
             if (firstErraneousField == "")
                 firstErraneousField = elem;
-            addWordToClassName(elem, "erraneous");
+            $("#" + id).addClass("erraneous");
             allGood = false;
             $("#" + id).bind('blur', function() {
                 if (isValueCorrectInInputBox(this)) {
-                    removeWordFromClassName(this, "erraneous");
+                    $(this).removeClass("erraneous");
                 } else {
-                    addWordToClassName(this, "erraneous");
+                    $(this).addClass("erraneous");
                 }
             });
         } else {
-            removeWordFromClassName(elem, "erraneous");
+            $("#" + id).removeClass("erraneous");
         }
     }
     if (firstErraneousField != "")
@@ -100,34 +100,6 @@ function isValueCorrectInInputBox(obj)
     } else {
         return (obj.value != "");
     }
-}
-
-function addWordToClassName(obj, word)
-{
-    var orig = obj.className;
-    var origList = orig.split(" ");
-    var alreadyThere = false;
-    for (var i = 0; i < origList.length; i++) {
-        if (origList[i] == word) {
-            alreadyThere = true;
-        }
-    }
-    if (!alreadyThere) {
-        obj.className = obj.className + " " + word;
-    }
-}
-
-function removeWordFromClassName(obj, word)
-{
-    var orig = obj.className;
-    var origList = orig.split(" ");
-    var finalList = new Array;
-    for (var i = 0; i < origList.length; i++) {
-        if (!(origList[i] == word)) {
-            finalList.push(origList[i]);
-        }
-    }
-    obj.className = finalList.join(" ");
 }
 
 function autoSelectBankInstructions(selectName, word)
