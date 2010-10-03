@@ -210,29 +210,29 @@ How would you like to donate?<br>
             <li>
                 <div class="left">
                     <label class="description" for="name">Name *</label>
-                    <input id="name" name="name" class="highlightable text medium" type="text" maxlength="255" value=""> 
+                    <input id="name" name="name" class="highlightable text medium" type="text" maxlength="255" value="" placeholder="Your full name"> 
                 </div> 
                 <div class="right">
                     <label class="description" for="email">Email *</label>
-                    <input id="email" name="email" class="highlightable text medium" type="text" maxlength="255" value=""> 
+                    <input id="email" name="email" class="highlightable text medium" type="text" maxlength="255" value="" placeholder="e.g. abc@def.com"> 
                     <label>Like abc@def.com. No special characters.</label>
                 </div> 
             </li><li>
                 <label class="description" for="address_1">Address *</label>
                 <div>
-                    <input id="address_1" name="address_1" class="highlightable text large" value="" type="text">
+                    <input id="address_1" name="address_1" class="highlightable text large" value="" type="text" placeholder="Number, Street, Locality">
                     <label for="address_1">Number, Street, Locality</label>
                 </div>
                 <div class="left">
-                    <input id="address_2" name="address_2" class="highlightable text medium" value="" type="text">
+                    <input id="address_2" name="address_2" class="highlightable text medium" value="" type="text" placeholder="City">
                     <label for="address_2">City</label>
                 </div>
                 <div class="right">
-                    <input id="address_3" name="address_3" class="highlightable text medium" value="" type="text">
+                    <input id="address_3" name="address_3" class="highlightable text medium" value="" type="text" placeholder="State or Province or Region">
                     <label for="address_3">State / Province / Region</label>
                 </div>
                 <div class="left">
-                    <input id="address_4" name="address_4" class="highlightable text medium" maxlength="15" value="" type="text">
+                    <input id="address_4" name="address_4" class="highlightable text medium" maxlength="15" value="" type="text" placeholder="Postal code">
                     <label for="address_4">Postal / Zip Code</label>
                 </div>
                 <div class="right">
@@ -311,11 +311,11 @@ How would you like to donate?<br>
             </li><li>
                 <div class="left">
                     <label class="description" for="amount">Amount (Rs.) *</label>
-                    <input id="amount" name="amount" class="highlightable text medium" type="text" maxlength="255" value=""> 
+                    <input id="amount" name="amount" class="highlightable text medium" type="text" maxlength="255" value="" placeholder="e.g. '2000' or '500 USD'"> 
                 </div> 
                 <div class="right">
                     <label class="description" for="bankname">Bank name *</label>
-                    <input id="bankname" name="bankname" class="highlightable text medium" type="text" maxlength="255" value=""> 
+                    <input id="bankname" name="bankname" class="highlightable text medium" type="text" maxlength="255" value="" placeholder="Your bank's name"> 
                     <label>The bank you intend to transfer from</label>
                 </div> 
             </li><li class="buttons">
