@@ -327,6 +327,7 @@ How would you like to donate?<br>
                         printf("value=\"%s\"", uniqid("PYRBTRF"));
                     ?>
                 >
+                <input type="hidden" name="is_js_enabled" id="is_js_enabled" value="false">
                 <input id="submitDonateBankTransferForm" class="button_text" type="submit" name="submit" value="Submit" onClick="return validateForm();">
             </li>
             </ul>

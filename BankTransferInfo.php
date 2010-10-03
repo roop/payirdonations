@@ -305,6 +305,12 @@ END;
             echo "$error <br>\n";
         }
         echo "</div>\n";
+        echo "<br>\n";
+        echo "<br>\n";
+        if ($_REQUEST['is_js_enabled'] == "false") {
+            echo "For a better browsing experience, we suggest you ";
+            echo "<a href=\"/enablejavascript.html\">turn on javascript</a> in your browser<br>\n";
+        }
     }
 ?>
 </div> <!-- TopText -->

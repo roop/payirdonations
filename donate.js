@@ -20,6 +20,7 @@ $(document).ready(function() {
                     $("#bank_transfer_stack").hide();
         });
         // since we have js up and running, replace target links with radio buttons, select bank transfer by default
+        $("#is_js_enabled").val("true");
         $("#donation-options").html(
          '<input type="radio" name="payment_mode" id="bank_transfer_selector" value="bank_transfer_mode" checked>' +
          '   <label class="choice">By bank transfer</label><br>' +
