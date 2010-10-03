@@ -8,13 +8,19 @@ $(document).ready(function() {
         // since we have js up and running, replace target links with radio buttons, select bank transfer by default
         $("#is_js_enabled").val("true");
         $("#donation-options").html(
-         '<input type="radio" name="payment_mode" id="bank_transfer_selector" value="bank_transfer_mode" checked>' +
+         '<input type="radio" name="payment_mode" id="bank_transfer_selector" value="bank_transfer_mode">' +
          '   <label class="choice">By bank transfer</label><br>' +
          '<input type="radio" name="payment_mode" id="cheque_dd_selector" value="cheque_dd_mode">' +
          '   <label class="choice">By cheque or demand draft</label><br>'
         );
         $(".payment_mode_stack").hide();
-        $("#bank_transfer_stack").show();
+        if (getCookie("payir_payment_mode_cookie") == "chequedd") {
+            $("#cheque_dd_stack").show();
+            $("#cheque_dd_selector").attr('checked', true);
+        } else {
+            $("#bank_transfer_stack").show();
+            $("#bank_transfer_selector").attr('checked', true);
+        }
         // highlight parts that are being filled up
         $(".highlightable").bind('focusin', function() {
                     addWordToClassName(this.parentNode.parentNode,"highlighted");
@@ -26,10 +32,12 @@ $(document).ready(function() {
         $("#bank_transfer_selector").bind('change', function() {
                     $("#bank_transfer_stack").fadeIn('slow');
                     $("#cheque_dd_stack").hide();
+                    setCookie("payir_payment_mode_cookie", "banktransfer");
         });
         $("#cheque_dd_selector").bind('change', function() {
                     $("#cheque_dd_stack").fadeIn('slow');
                     $("#bank_transfer_stack").hide();
+                    setCookie("payir_payment_mode_cookie", "chequedd");
         });
     }
     if (window.location.href.endsWith("BankTransferInfo.php")) {
@@ -153,3 +161,21 @@ function matchingBankIndex(name)
     return result;
 }
 
+function setCookie(key, value)
+{
+    var cookieValidTill = new Date();
+    cookieValidTill.setDate(cookieValidTill.getDate() + 365 /* one year */);
+    var cookieStr = key + "=" + value + "; expiry=" + cookieValidTill.toGMTString() + "; path=/";
+    document.cookie = cookieStr;
+}
+
+function getCookie(key)
+{
+	var cookies = document.cookie.split(/; \*/);
+	for(var i = 0; i < cookies.length; i++) {
+		var cookie = cookies[i];
+		if (cookie.indexOf(key) == 0)
+            return cookie.substring(key.length + 1 /* count '=' sign as well */, cookie.length);
+	}
+	return null;
+}
