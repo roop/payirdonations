@@ -5,20 +5,6 @@ String.prototype.endsWith = function(str) { return (this.match(str+"$")==str); }
 
 $(document).ready(function() {
     if (window.location.href.endsWith("Donate.php")) {
-        $(".highlightable").bind('focusin', function() {
-                    addWordToClassName(this.parentNode.parentNode,"highlighted");
-                    });
-        $(".highlightable").bind('blur', function() {
-                    removeWordFromClassName(this.parentNode.parentNode,"highlighted")
-                    });
-        $("#bank_transfer_selector").bind('change', function() {
-                    $("#bank_transfer_stack").fadeIn('slow');
-                    $("#cheque_dd_stack").hide();
-        });
-        $("#cheque_dd_selector").bind('change', function() {
-                    $("#cheque_dd_stack").fadeIn('slow');
-                    $("#bank_transfer_stack").hide();
-        });
         // since we have js up and running, replace target links with radio buttons, select bank transfer by default
         $("#is_js_enabled").val("true");
         $("#donation-options").html(
@@ -29,6 +15,22 @@ $(document).ready(function() {
         );
         $(".payment_mode_stack").hide();
         $("#bank_transfer_stack").show();
+        // highlight parts that are being filled up
+        $(".highlightable").bind('focusin', function() {
+                    addWordToClassName(this.parentNode.parentNode,"highlighted");
+                    });
+        $(".highlightable").bind('blur', function() {
+                    removeWordFromClassName(this.parentNode.parentNode,"highlighted")
+                    });
+        // show the bank transfer mode per radio selection
+        $("#bank_transfer_selector").bind('change', function() {
+                    $("#bank_transfer_stack").fadeIn('slow');
+                    $("#cheque_dd_stack").hide();
+        });
+        $("#cheque_dd_selector").bind('change', function() {
+                    $("#cheque_dd_stack").fadeIn('slow');
+                    $("#bank_transfer_stack").hide();
+        });
     }
     if (window.location.href.endsWith("BankTransferInfo.php")) {
         $("#bank_transfer_instructions_bank_select").bind('change', function() {
