@@ -5,6 +5,7 @@
 <title>Donate - Payir</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="donate.css">
+<link rel="stylesheet" type="text/css" href="http://cdn.webrupee.com/font">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
 <script type="text/javascript" src="donate.js"></script>
 </head>
@@ -140,15 +141,15 @@ actual projects. We keep our operational overheads very low.<br>
 We welcome contributions in any denomination. To give you an idea of the amount of change your money can bring about:
 <ul>
     <li>
-        <b>Rs. 2000/-</b> can sponsor our Nutrient Supplement Program
+        <b><span class="WebRupee">Rs.</span> 2000</b> can sponsor our Nutrient Supplement Program
         for an undernourished child for a year
     </li>
     <li>
-        With <b>Rs. 2000/-</b> we can provide breakfast for 
+        With <b><span class="WebRupee">Rs.</span> 2000</b>, we can provide breakfast for 
         one child in primary school for a year
     </li>
     <li>
-        <b>Rs. 6000/-</b> can sponsor a child's education in the
+        <b><span class="WebRupee">Rs.</span> 6000</b> can sponsor a child's education in the
         Payir Learning Center for a year
     </li>
 </ul>
