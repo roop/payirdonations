@@ -13,12 +13,30 @@
         default: $nationalityString = "unknown";
     }
 
-    # FIXME: Validate the numbers here too. What if the donor had turned off
-    # javascript in his browser.
+    $errorList = array();
+    if ($_REQUEST['name'] == "")
+        $errorList[] = "<span>Name</span> is required";
+    if ($_REQUEST['email'] == "")
+        $errorList[] = "<span>Email</span> is required";
+    else if (preg_match("/^[a-z0-9-_\.]+@[a-z0-9-_]+\.[a-z0-9-_\.]+$/i", $_REQUEST['email']) == 0)
+        $errorList[] = "<span>Email</span> should be of the form abc@def.com ";
+    if ($_REQUEST['address_1'] == "")
+        $errorList[] = "<span>Number / Street / Locality</span> is required";
+    if ($_REQUEST['address_2'] == "")
+        $errorList[] = "<span>City</span> is required";
+    if ($_REQUEST['address_3'] == "")
+        $errorList[] = "<span>State / Province / Region</span> is required";
+    if ($_REQUEST['address_4'] == "")
+        $errorList[] = "<span>Postal / Zip / Pin code</span> is required";
+    if ($_REQUEST['amount'] == "")
+        $errorList[] = "<span>Amount</span> is required";
+    if ($_REQUEST['bankname'] == "")
+        $errorList[] = "<span>Bank name</span> is required";
 
-    # mail the details to donation-alert@payir.org
-    $subject      = "Donation: Bank transfer from {$_REQUEST['name']} for Rs. {$_REQUEST['amount']}";
-    $body         = <<<ENDOFMSG
+    if (empty($errorList)) {
+        # mail the details to donation-alert@payir.org
+        $subject      = "Donation: Bank transfer from {$_REQUEST['name']} for Rs. {$_REQUEST['amount']}";
+        $body         = <<<ENDOFMSG
 A potential donor submitted the following bank transfer details
 in the form at http://www.payir.org/Donate.php :
 
@@ -38,19 +56,20 @@ Bank name: {$_REQUEST['bankname']}
 This email is not a confirmation of the transfer - just a heads-up
 for a possible future transfer.
 ENDOFMSG;
-    mail("donations@payir.org", $subject, $body, "From: no-reply@payir.org");
-    
-    $nationality = $_REQUEST['nationality'];
-    # what info should we give the donor?
-    if ($nationality == 0 || $nationality == 1) {  # Indian
-        $bankDetailsTitle = "Bank account for donations from Indian / NRI donors";
-        $bankAccountNumber = "10465350452";
-        $bankAccountType = "Savings";
-    } else if ($nationality == 2) { # foreign
-        $bankDetailsTitle = "Bank account for donations from foreign donors";
-        $bankAccountNumber = "30750793126";
-        $bankAccountType = "Current";
-    }
+        mail("donations@payir.org", $subject, $body, "From: no-reply@payir.org");
+        
+        $nationality = $_REQUEST['nationality'];
+        # what info should we give the donor?
+        if ($nationality == 0 || $nationality == 1) {  # Indian
+            $bankDetailsTitle = "Bank account for donations from Indian / NRI donors";
+            $bankAccountNumber = "10465350452";
+            $bankAccountType = "Savings";
+        } else if ($nationality == 2) { # foreign
+            $bankDetailsTitle = "Bank account for donations from foreign donors";
+            $bankAccountNumber = "30750793126";
+            $bankAccountType = "Current";
+        }
+    } // if empty($errorList)
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
@@ -164,7 +183,8 @@ ENDOFMSG;
 <h4>Support Payir: Donate by bank transfer</h4>
 <br>
 <?php
-echo <<<END
+if (empty($errorList)) {
+    echo <<<END
     <p>
        Thank you for deciding to donate to Payir by bank transfer.
        Please find our bank account information below:
@@ -184,7 +204,7 @@ echo <<<END
         </tbody></table>
     </blockquote>
     <br>
-END
+END;
         if ($nationality == 0 || $nationality == 1) {
             echo <<<END
     <p>
@@ -244,7 +264,7 @@ END;
     <br>
 END;
     } # end of else address
-    echo <<<END;
+    echo <<<END
     We will also send you our newsletter by email (once a year) to keep you informed of how your money was utilized.<br>
     <br>
     <p>
@@ -276,7 +296,16 @@ END;
            <textarea rows="4" id="bank_transfer_additional_info" name="bank_transfer_additional_info" cols="0"></textarea>
            <input id="submitAdditionalBankTransferInfo" class="button_text" type="submit" name="submit" value="Submit additional info">
        </form>
-END
+END;
+    } else { // errorList is not empty
+        echo "<b>The following errors occurred. Please use the back button in your browser to go back and correct them.</b><br>\n";
+        echo "<br>\n";
+        echo "<div class=\"errorList\">\n";
+        foreach ($errorList as $error) {
+            echo "$error <br>\n";
+        }
+        echo "</div>\n";
+    }
 ?>
 </div> <!-- TopText -->
 </td>

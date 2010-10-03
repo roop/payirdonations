@@ -514,3 +514,13 @@ input.button_text
     margin:0pt 0pt 3px;
 }
 
+div.errorList {
+    padding: 10px;
+    background: #e4e4e4;
+    color: #000;
+}
+
+div.errorList span {
+    color: #444;
+}
+
