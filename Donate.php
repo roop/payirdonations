@@ -233,7 +233,7 @@ How would you like to donate?<br>
                 </div>
                 <div class="left">
                     <input id="address_4" name="address_4" class="highlightable text medium" maxlength="15" value="" type="text" placeholder="Postal code">
-                    <label for="address_4">Postal / Zip Code</label>
+                    <label for="address_4">Postal / Zip / PIN Code</label>
                 </div>
                 <div class="right">
                     <select class="highlightable select medium" id="address_5" name="address_5"> 
