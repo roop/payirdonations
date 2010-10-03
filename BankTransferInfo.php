@@ -237,6 +237,11 @@ END;
     echo <<<END
     <input type="hidden" id="bank_transfer_info_bankname" value="{$_REQUEST['bankname']}">
 END;
+    if ($nationality == 0 || $nationality == 1) {
+        $certificateToSend = "A donation certificate for claiming your tax benefit on your donation under Section 80G of the Indian Income Tax Act";
+    } else {
+        $certificateToSend = "A copy of the FCRA certificate for our organization issued by the Government of India";
+    }
     if ($_REQUEST['address_5'] == 'India') {
     echo <<<END
     <br>
@@ -244,7 +249,7 @@ END;
     we will send you the following to the postal address you have specified: <br>
     <ul>
         <li>A receipt for your donation</li>
-        <li>A donation certificate for claiming your tax benefit on your donation under Section 80G of the Indian Income Tax Act </li>
+        <li>$certificateToSend</li>
     </ul>
     <br>
 END;
@@ -255,7 +260,7 @@ END;
     the donors by post:
     <ul>
         <li>A receipt for your donation</li>
-        <li>A donation certificate for claiming your tax benefit on your donation under Section 80G of the Indian Income Tax Act </li>
+        <li>$certificateToSend</li>
     </ul>
     <br>
     But we will not be able to send these to an address outside India. If you
