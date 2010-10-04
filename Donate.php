@@ -192,15 +192,25 @@ How would you like to donate?<br>
             <p>
                If you'd like to donate us in kind, please write to us by email at
                <a href="mailto:donate@payir.org">donate@payir.org</a> or by
-               post at the following address:
+               mail at the following address.
                <br>
             </p>
             <blockquote class="roundedrect">
+               <h4>If you're sending by normal post:</h4>
                Payir Trust<br>
                Thenur village<br>
                T. Kalathur via Kunnam Taluk<br>
                Perambalur District<br>
                Tamil Nadu - 621 114<br>
+               India<br>
+               <br>
+               <h4>If you're sending by courier:</h4>
+               Payir Trust<br>
+               c/o Senthilkumar Gopalan<br>
+               48/2 Ammamandapam Road<br>
+               Mambalasalai<br>
+               Trichy<br>
+               Tamil Nadu - 620 005<br>
                India<br>
             </blockquote>
             </div> <!-- stack_description -->
@@ -357,15 +367,25 @@ How would you like to donate?<br>
             <div class="stack_description">
             <h3><a name="chequedd" style="color: inherit; text-decoration: inherit;">By cheque / DD</a></h3>
             <p>
-               Please write a crossed cheque or demand draft payable to &quot;<b>Payir Trust</b>&quot; and mail it to us at: 
+               Please write a crossed cheque or demand draft payable to &quot;<b>Payir Trust</b>&quot; and mail it to us at the following address. 
                <br>
             </p>
             <blockquote class="roundedrect">
+               <h4>If you're sending by normal post:</h4>
                Payir Trust<br>
                Thenur village<br>
                T. Kalathur via Kunnam Taluk<br>
                Perambalur District<br>
                Tamil Nadu - 621 114<br>
+               India<br>
+               <br>
+               <h4>If you're sending by courier:</h4>
+               Payir Trust<br>
+               c/o Senthilkumar Gopalan<br>
+               48/2 Ammamandapam Road<br>
+               Mambalasalai<br>
+               Trichy<br>
+               Tamil Nadu - 620 005<br>
                India<br>
             </blockquote>
             <p>
