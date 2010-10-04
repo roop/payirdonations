@@ -205,7 +205,7 @@ if (empty($errorList)) {
     </blockquote>
     <br>
 END;
-        if ($nationality == 0 || $nationality == 1) {
+        if ($_REQUEST['is_js_enabled'] == "true" && ($nationality == 0 || $nationality == 1)) {
             echo <<<END
     <p>
        In case you use one of these Indian banks, we have step-by-step instructions to help you in your transfer.
