@@ -40,7 +40,7 @@ div.margined
     margin: 5px 10px;
 }
 
-form#bank_transfer_form, div#cheque_dd_div
+form#bank_transfer_form, div#cheque_dd_div, div#in_kind_div
 {
     padding-top: 10px;
     margin-top: 10px;

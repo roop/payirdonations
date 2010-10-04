@@ -8,18 +8,23 @@ $(document).ready(function() {
         // since we have js up and running, replace target links with radio buttons, select bank transfer by default
         $("#is_js_enabled").val("true");
         $("#donation-options").html(
+         '<input type="radio" name="payment_mode" id="in_kind_selector" value="in_kind_mode">' +
+         '   <label class="choice">As an in-kind donation</label><br>' +
          '<input type="radio" name="payment_mode" id="bank_transfer_selector" value="bank_transfer_mode">' +
          '   <label class="choice">By bank transfer</label><br>' +
          '<input type="radio" name="payment_mode" id="cheque_dd_selector" value="cheque_dd_mode">' +
          '   <label class="choice">By cheque or demand draft</label><br>'
         );
         $(".payment_mode_stack").hide();
-        if (getCookie("payir_payment_mode_cookie") == "chequedd") {
+        if (getCookie("payir_payment_mode_cookie") == "banktransfer") {
+            $("#bank_transfer_stack").show();
+            $("#bank_transfer_selector").attr('checked', true);
+        } else if (getCookie("payir_payment_mode_cookie") == "chequedd") {
             $("#cheque_dd_stack").show();
             $("#cheque_dd_selector").attr('checked', true);
         } else {
-            $("#bank_transfer_stack").show();
-            $("#bank_transfer_selector").attr('checked', true);
+            $("#in_kind_stack").show();
+            $("#in_kind_selector").attr('checked', true);
         }
         // highlight parts that are being filled up
         $(".highlightable").bind('focus', function() {
@@ -32,12 +37,20 @@ $(document).ready(function() {
         $("#bank_transfer_selector").bind('change', function() {
                     $("#bank_transfer_stack").fadeIn('slow');
                     $("#cheque_dd_stack").hide();
+                    $("#in_kind_stack").hide();
                     setCookie("payir_payment_mode_cookie", "banktransfer");
         });
         $("#cheque_dd_selector").bind('change', function() {
                     $("#cheque_dd_stack").fadeIn('slow');
                     $("#bank_transfer_stack").hide();
+                    $("#in_kind_stack").hide();
                     setCookie("payir_payment_mode_cookie", "chequedd");
+        });
+        $("#in_kind_selector").bind('change', function() {
+                    $("#in_kind_stack").fadeIn('slow');
+                    $("#cheque_dd_stack").hide();
+                    $("#bank_transfer_stack").hide();
+                    setCookie("payir_payment_mode_cookie", "inkind");
         });
     }
     if (window.location.href.endsWith("BankTransferInfo.php")) {

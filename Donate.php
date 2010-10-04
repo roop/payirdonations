@@ -153,32 +153,13 @@ We welcome contributions in any denomination. To give you an idea of the amount 
         Payir Learning Center for a year
     </li>
 </ul>
-
-<br><br>
-We welcome in-kind donations as well. We have a running list of
-things we need, and update it as the donations reach us.<br>
-<blockquote class="lightweight">
-    <div style="display: inline-block; vertical-align: top;">
-        <a href="http://spreadsheets.google.com/pub?key=0AgstJCloYAdqcHRvTUdjMm1HcThubzNwTk9lUXU3RHc&hl=en&output=html">
-        <img src="images/spreadsheet-icon.png" alt="Current wishlist">
-        </a>
-    </div>
-    <div style="display: inline-block; vertical-align: top;">
-        Current wishlist
-    </div>
-</blockquote>
-<p>
-   If you'd like to donate us in kind, please write to us by email at
-   <a href="mailto:donate@payir.org">donate@payir.org</a> or by post to
-   <a href="http://payir.org/ouraddress.html">our address</a>.
-   <br>
-</p>
-<br>
 <br>
 You can make a monetary donation either by bank transfer or by cheque/DD.
 If you are an Indian taxpayer, your donation is eligible for tax
 exemption under Section 80G.<br>
-<br><br>
+<br>
+We welcome in-kind donations as well.<br>
+<br>
 
 <div class="section roundedrect">
 
@@ -186,10 +167,46 @@ How would you like to donate?<br>
 <div id="donation-options" class="margined">
     <!-- if js is enabled, js code replaces the following content with radio buttons -->
     <ul>
+        <li><a href="#inkind">As an in-kind donation</a></li>
         <li><a href="#banktransfer">By bank transfer</a></li>
         <li><a href="#chequedd">By cheque or demand draft</a></li>
     </ul>
 </div>
+    <div id="in_kind_stack" class="payment_mode_stack" style="display: block;">
+        <div id="in_kind_div">
+            <div class="stack_description">
+            <h3><a name="inkind" style="color: inherit; text-decoration: inherit;">As an in-kind donation</a></h3>
+            <p>
+               We welcome donations in kind. We have a running list of things we need, and update it as the donations reach us.
+            </p>
+            <blockquote class="lightweight">
+                <div style="display: inline-block; vertical-align: top;">
+                    <a href="http://spreadsheets.google.com/pub?key=0AgstJCloYAdqcHRvTUdjMm1HcThubzNwTk9lUXU3RHc&hl=en&output=html">
+                    <img src="images/spreadsheet-icon.png" alt="Current wishlist">
+                    </a>
+                </div>
+                <div style="display: inline-block; vertical-align: top;">
+                    Current wishlist
+                </div>
+            </blockquote>
+            <p>
+               If you'd like to donate us in kind, please write to us by email at
+               <a href="mailto:donate@payir.org">donate@payir.org</a> or by
+               post at the following address:
+               <br>
+            </p>
+            <blockquote class="roundedrect">
+               Payir Trust<br>
+               Thenur village<br>
+               T. Kalathur via Kunnam Taluk<br>
+               Perambalur District<br>
+               Tamil Nadu - 621 114<br>
+               India<br>
+            </blockquote>
+            </div> <!-- stack_description -->
+        </div> <!-- in_kind_div -->
+    </div> <!-- in_kind_stack -->
+
     <div id="bank_transfer_stack" class="payment_mode_stack" style="display: block;">
         <form id="bank_transfer_form" method="post" action="BankTransferInfo.php">
             <div class="stack_description">
