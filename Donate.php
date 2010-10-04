@@ -200,7 +200,7 @@ How would you like to donate?<br>
             </blockquote>
             <p>
                If you'd like to donate us in kind, please write to us by email at
-               <a href="mailto:donate@payir.org">donate@payir.org</a> or by
+               <a href="mailto:donations@payir.org">donations@payir.org</a> or by
                mail at the following address.
                <br>
             </p>
@@ -326,7 +326,7 @@ How would you like to donate?<br>
                     We will send you a donation certificate by post to this address to enable
                     you to claim your tax benefits under Section 80G of the Indian Income Tax
                     Act. In case you'd like to receive the certificate on another address, please
-                    let us know at <a href="mailto:donate@payir.org" style="color: inherit;"
+                    let us know at <a href="mailto:donations@payir.org" style="color: inherit;"
                     tabindex="-1" >donations@payir.org</a>.
                     </label>
                 </div>
