@@ -121,7 +121,7 @@ end, we can ensure that the whole of your contribution is spent on
 actual projects. We keep our operational overheads very low.<br>
 <blockquote class="lightweight">
     <div style="display: inline-block; vertical-align: top;">
-        <a href="http://spreadsheets.google.com/pub?key=0AniZyaH522ZkdC00Q2lDbGQ3eG5VVExjdW1HUm1xWWc&hl=en&output=html&gid=3">
+        <a href="http://spreadsheets.google.com/pub?key=0AniZyaH522ZkdC00Q2lDbGQ3eG5VVExjdW1HUm1xWWc&hl=en&output=html&gid=3" target="_blank">
         <img src="images/spreadsheet-icon.png" alt="Accounts for Finacial Year 2006-07">
         </a>
     </div>
@@ -131,7 +131,7 @@ actual projects. We keep our operational overheads very low.<br>
     <div style="display: inline-block; vertical-align: top; width:20px;">
     </div>
     <div style="display: inline-block; vertical-align: top;">
-        <a href="http://spreadsheets.google.com/pub?key=0AniZyaH522ZkdGhQQ3R0NFdHY2ExcGkwOVQ5THNBQUE&hl=en&output=html&gid=1">
+        <a href="http://spreadsheets.google.com/pub?key=0AniZyaH522ZkdGhQQ3R0NFdHY2ExcGkwOVQ5THNBQUE&hl=en&output=html&gid=1" target="_blank">
         <img src="images/spreadsheet-icon.png" alt="Accounts for Finacial Year 2005-06">
         </a>
     </div>
@@ -181,7 +181,7 @@ How would you like to donate?<br>
             </p>
             <blockquote class="lightweight">
                 <div style="display: inline-block; vertical-align: top;">
-                    <a href="http://spreadsheets.google.com/pub?key=0AgstJCloYAdqcHRvTUdjMm1HcThubzNwTk9lUXU3RHc&hl=en&output=html">
+                    <a href="http://spreadsheets.google.com/pub?key=0AgstJCloYAdqcHRvTUdjMm1HcThubzNwTk9lUXU3RHc&hl=en&output=html" target="_blank">
                     <img src="images/spreadsheet-icon.png" alt="Current wishlist">
                     </a>
                 </div>
