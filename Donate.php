@@ -110,10 +110,10 @@
 <br>
 <h4>Support Payir: Donate now</h4>
 <br>
-Payir is a non-profit charitable trust and runs a majority of its operations
-on donations from well wishers. Apart from specific projects sponsored by our
-<a href="/partners_dev.html">partner organizations</a>, we operate solely 
-out of contributions from individuals.
+Payir is a non-profit charitable trust and a major part of its activities
+are funded by donations received from well wishers. While some of our projects are partially sponsored by
+our <a href="/partners_dev.html">partner organizations</a>, we depend
+on contributions from individuals to keep us going.
 You can make a difference to a village by making a donation now.<br>
 <br>
 Since we manage the finances and delivery of our programs end to
