@@ -214,8 +214,7 @@ How would you like to donate?<br>
                India<br>
                <br>
                <h4>If you're sending by courier:</h4>
-               Payir Trust<br>
-               c/o Senthilkumar Gopalan<br>
+               Senthilkumar Gopalan<br>
                48/2 Ammamandapam Road<br>
                Mambalasalai<br>
                Trichy<br>
@@ -389,8 +388,7 @@ How would you like to donate?<br>
                India<br>
                <br>
                <h4>If you're sending by courier:</h4>
-               Payir Trust<br>
-               c/o Senthilkumar Gopalan<br>
+               Senthilkumar Gopalan<br>
                48/2 Ammamandapam Road<br>
                Mambalasalai<br>
                Trichy<br>
