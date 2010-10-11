@@ -242,7 +242,6 @@ END;
     } else {
         $certificateToSend = "A copy of the FCRA certificate for our organization issued by the Government of India";
     }
-    if ($_REQUEST['address_5'] == 'India') {
     echo <<<END
     <br>
     Thank you for your donation. Once we receive the bank transfer,
@@ -252,24 +251,6 @@ END;
         <li>$certificateToSend</li>
     </ul>
     <br>
-END;
-    } else { # end of if address
-    echo <<<END
-    <br>
-    Thank you for your donation. We normally send the following to
-    the donors by post:
-    <ul>
-        <li>A receipt for your donation</li>
-        <li>$certificateToSend</li>
-    </ul>
-    <br>
-    But we will not be able to send these to an address outside India. If you
-    have an Indian address to which we can send these, please let us know
-    by email at <a href="mailto:donations@payir.org">donations@payir.org</a>.<br>
-    <br>
-END;
-    } # end of else address
-    echo <<<END
     We will also send you our annual report by email to keep you informed of how your money was utilized.<br>
     <br>
     <p>
