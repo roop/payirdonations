@@ -273,9 +273,27 @@ END;
            from bank <i>&quot;{$_REQUEST['bankname']}&quot;</i>
            </p>
        </blockquote>
+END;
+    if (($nationality == 0 || $nationality == 1) && $_REQUEST['address_5'] != 'India') {
+       # Indian national, but address is given outside India
+       # FCRA guys want Indian address of donors when we get money into our Indian account
+       echo <<<END
+       Since you are an Indian citizen with a postal address outside India, we request you
+       to kindly inform us of your address in India as well - we need that for FCRA conformance.
+       You could either email it to us at <a href="mailto:donations@payir.org">donations@payir.org</a>
+       or enter it in the additional information form below. You can also use the form below to let us know about
+       any further information you have about your donation (like transaction id) or any 
+       errata on the information you have given us: <br>
+END;
+    } else {
+       # All good. Nationality is consistent with postal address.
+       echo <<<END
        If you have any further information about your donation (like transaction id)
        or would like to amend the information you had provided, you can let us
        know here:<br>
+END;
+    }
+    echo <<<END
        <form id="bank_transfer_additional_info_form" method="post" action="BankTransferAdditionalInfo.php">
            <input type="hidden" name="payir_form_name" value="bank_transfer_additional_info_form">
            <input type="hidden" name="payir_transaction_id" "value=\"{$_REQUEST['payir_transaction_id']}\"">
