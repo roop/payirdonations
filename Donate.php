@@ -149,17 +149,10 @@ We welcome contributions in any denomination. To give you an idea of the amount 
         one child in primary school for a year
     </li>
     <li>
-        <b><span class="WebRupee">Rs.</span> 6000</b> can sponsor a child's education in the
-        Payir Learning Center for a year
+        With <b><span class="WebRupee">Rs.</span> 1000</b>, we can nurture a tree in our Sacred Groves community forests for a year
     </li>
     <li>
-        With <b><span class="WebRupee">Rs.</span> 2000</b>, we can nurture a tree in our Sacred Groves community forests for a year
-    </li>
-    <li>
-        <b><span class="WebRupee">Rs.</span> 5000</b> will fund a life-saving awareness program in one village in case of outbreak of a contagious disease
-    </li>
-    <li>
-        <b><span class="WebRupee">Rs.</span> 2500</b> will cover the costs of employing one health worker for a month
+        <b><span class="WebRupee">Rs.</span> 1000</b> will cover the costs of employing one health worker for a month
     </li>
 </ul>
 <br>
