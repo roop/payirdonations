@@ -368,7 +368,8 @@ How would you like to donate?<br>
             <div class="stack_description">
             <h3><a name="chequedd" style="color: inherit; text-decoration: inherit;">By cheque / DD</a></h3>
             <p>
-               Please write a crossed cheque or demand draft payable to &quot;<b>Payir Trust</b>&quot; and mail it to us at the following address. 
+               Please write a crossed cheque payable to <b>Payir Trust</b> or a demand draft in favour of
+               <b>Payir Trust</b> payable at <b>Trichy</b> and mail it to us at the following address. 
                <br>
             </p>
             <blockquote class="roundedrect">
